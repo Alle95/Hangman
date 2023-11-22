@@ -22,7 +22,7 @@ function showWord() {
   `; 
     for(let i = 65; i <= 90; ++i) {
         const newBtn = document.createElement('button');
-        newBtn.innerText = givenWord.fromCharCode(i);
+        newBtn.innerText = String.fromCharCode(i);
         newBtn.className="btn btn-primary";
         newBtn.style="margin-right: 16px";
         document.querySelector('#button-container').appendChild(newBtn);
@@ -37,7 +37,7 @@ function showWord() {
 }
 
 const onClick = function() {
-    let letter = givenWord.fromCharCode(this.id); 
+    let letter = String.fromCharCode(this.id); 
     if (givenWord.includes(letter)) {
         apperLetter(letter);
     } else {
