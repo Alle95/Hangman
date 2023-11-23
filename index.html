@@ -12,10 +12,6 @@
         <div class="card">
             <div class="card-body" style="background-color: skyblue;">
                 <h1 class="card-title" style="color:black; font-style: oblique;">Spanzuratoarea</h1>
-            </div>
-    </div>
-    <div class="container">
-            <div class="body" style="width: 100%;">
                 <h5 class="cad-title">Regulile jocului! </h5>
                 <p class ="rules">Scopul jocului este de a ghici cuvântul dat,
                      prin încercări succesive de litere. Cuvântul ce trebuie ghicit
@@ -31,14 +27,55 @@
                 <button id="startGame" type="button" class="btn btn-primary" style="float:right" onclick="showWord()">
                     Start Joc!
                 </button>
-            </div>
-          </div>
+              </div>
     </div>
     <div class="container">
-        <div class ="card" style="float: right;">
-            <div id="button-container" style="width: 50%;" ></div>
+        <div class="card" style>
+          <div class="body-header">Cuvantul este:</div>
+            <br>
+            <input type="text" value="" name="textbox" id="textbox" readonly/>
+            <br>
+            <h4 id="incorrectGuesses" > Raspuns Gresit: 0</h4>
+          </div>
+          <button id="reloadPage" type="button" class="btn btn-secondary" style="float:left"
+            onClick="window.location.reload()">
+            Reincearca!
+          </button>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+      <div class="keyboard">
+        <button class="btn btn-primary btn-lg" onclick="addLetter('A')">A</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('B')">B</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('C')">C</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('D')">D</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('E')">E</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('F')">F</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('G')">G</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('H')">H</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('I')">I</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('J')">J</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('K')">K</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('L')">L</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('M')">M</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('N')">N</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('O')">O</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('P')">P</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('Q')">Q</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('R')">R</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('S')">S</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('T')">T</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('U')">U</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('V')">V</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('W')">W</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('X')">X</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('Y')">Y</button>
+        <button class="btn btn-primary btn-lg" onclick="addLetter('Z')">Z</button>
+    </div>
+  </div>
     <script src="script.js"></script>
   </body>
 </html>
